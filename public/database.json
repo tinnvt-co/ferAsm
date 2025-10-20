@@ -1,0 +1,561 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Nguyễn Văn A",
+        "email": "a@gmail.com",
+        "password": "123456",
+        "role": "admin"
+      },
+      {
+        "id": 2,
+        "name": "Trần Thị B",
+        "email": "b@gmail.com",
+        "password": "123456",
+        "role": "sale"
+      },
+      {
+        "id": 3,
+        "name": "Lê Văn C",
+        "email": "c@gmail.com",
+        "password": "123456",
+        "role": "customer"
+      }
+    ],
+    "categories": [
+      { "id": 1, "name": "Rau xanh" },
+      { "id": 2, "name": "Củ quả" },
+      { "id": 3, "name": "Trái cây" }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Rau muống",
+            "description": "Rau muống tươi sạch, an toàn.",
+            "price": 15000,
+            "image": "https://goodprice.vn/files/common/rau-muong-j5hyg.jpg",
+            "categoryId": 1,
+            "stock": 100
+          },
+          {
+            "id": 2,
+            "name": "Cà rốt",
+            "description": "Cà rốt tươi ngon, giàu dinh dưỡng.",
+            "price": 20000,
+            "image": "https://suckhoedoisong.qltns.mediacdn.vn/thumb_w/1200/324455921873985536/2021/8/10/ava-carot-1628613142139653627209-20-0-660-1024-crop-1628613159334685556069.jpg",
+            "categoryId": 2,
+            "stock": 80
+          },
+          {
+            "id": 3,
+            "name": "Táo đỏ",
+            "description": "Táo đỏ nhập khẩu, giòn ngọt.",
+            "price": 50000,
+            "image": "https://toplist.vn/images/800px/tao-694875.jpg",
+            "categoryId": 3,
+            "stock": 50
+          },
+          {
+            "id": 4,
+            "name": "Xà lách",
+            "description": "Xà lách tươi xanh, ăn sống hoặc salad.",
+            "price": 18000,
+            "image": "https://bepmina.vn/wp-content/uploads/2020/11/thai-xa-lach.jpg",
+            "categoryId": 1,
+            "stock": 70
+          },
+          {
+            "id": 5,
+            "name": "Cải ngọt",
+            "description": "Cải ngọt tươi sạch, giàu chất xơ.",
+            "price": 17000,
+            "image": "https://bizweb.dktcdn.net/100/164/964/files/tac-dung-cua-rau-cai-ngot-voi-suc-khoe-con-nguoi-nhu-the-nao.jpg?v=1599216211805",
+            "categoryId": 1,
+            "stock": 90
+          },
+          {
+            "id": 6,
+            "name": "Cải bó xôi",
+            "description": "Cải bó xôi nhiều vitamin, tốt cho sức khỏe.",
+            "price": 25000,
+            "image": "https://meatboxvietnam.vn/wp-content/uploads/2019/10/bo-xoi.jpg",
+            "categoryId": 1,
+            "stock": 60
+          },
+          {
+            "id": 7,
+            "name": "Khoai tây",
+            "description": "Khoai tây Đà Lạt, ngon và bùi.",
+            "price": 30000,
+            "image": "https://bazaarvietnam.vn/wp-content/uploads/2022/02/harper-bazaar-an-khoai-tay-co-tac-dung-gi-pixabay-3.jpg",
+            "categoryId": 2,
+            "stock": 150
+          },
+          {
+            "id": 8,
+            "name": "Khoai lang",
+            "description": "Khoai lang mật, ngọt tự nhiên.",
+            "price": 28000,
+            "image": "https://ttol.vietnamnetjsc.vn/images/2022/11/03/15/36/khoai-lang-1.jpg",
+            "categoryId": 2,
+            "stock": 120
+          },
+          {
+            "id": 9,
+            "name": "Bí đỏ",
+            "description": "Bí đỏ giàu vitamin A, tốt cho mắt.",
+            "price": 22000,
+            "image": "https://vinmec-prod.s3.amazonaws.com/images/20200516_075746_243987_bi-do-1.max-1800x1800.jpg",
+            "categoryId": 2,
+            "stock": 95
+          },
+          {
+            "id": 10,
+            "name": "Bí xanh",
+            "description": "Bí xanh mát, phù hợp nấu canh.",
+            "price": 21000,
+            "image": "https://vuonnhien.vn/wp-content/uploads/2021/08/tac-dung-cua-bi-xanh-10.jpg",
+            "categoryId": 2,
+            "stock": 85
+          },
+          {
+            "id": 11,
+            "name": "Dưa leo",
+            "description": "Dưa leo giòn, ngon mát.",
+            "price": 18000,
+            "image": "https://cdn.tgdd.vn/Files/2014/08/04/557656/dua-leo-va-nhung-cong-dung-tren-ca-tuyet-voi.jpg",
+            "categoryId": 2,
+            "stock": 110
+          },
+          {
+            "id": 12,
+            "name": "Chuối",
+            "description": "Chuối già, chín tự nhiên.",
+            "price": 25000,
+            "image": "https://vinmec-prod.s3.amazonaws.com/images/20200505_095113_684763_chuoi-2.max-800x800.jpg",
+            "categoryId": 3,
+            "stock": 130
+          },
+          {
+            "id": 13,
+            "name": "Cam",
+            "description": "Cam sành mọng nước, ngọt tự nhiên.",
+            "price": 45000,
+            "image": "https://static-images.vnncdn.net/files/publish/2023/6/1/cam-sanh-1-1134.jpg",
+            "categoryId": 3,
+            "stock": 70
+          },
+          {
+            "id": 14,
+            "name": "Bưởi",
+            "description": "Bưởi da xanh ngọt mát.",
+            "price": 55000,
+            "image": "https://cdn.tgdd.vn/Files/2019/12/11/1226265/cach-chon-mot-so-loai-buoi-tuoi-ngon-201912112222582099.jpg",
+            "categoryId": 3,
+            "stock": 60
+          },
+          {
+            "id": 15,
+            "name": "Ổi",
+            "description": "Ổi sạch, giòn ngọt, nhiều vitamin C.",
+            "price": 30000,
+            "image": "https://icdn.one/upload/2020/11/13/20201113070207-d8d60d00.png",
+            "categoryId": 3,
+            "stock": 90
+          },
+          {
+            "id": 16,
+            "name": "Đu đủ",
+            "description": "Đu đủ chín cây, ngọt lịm.",
+            "price": 35000,
+            "image": "https://bazaarvietnam.vn/wp-content/uploads/2022/06/harper-bazaar-100g-du-du-bao-nhieu-calo-pranjall-kumar-unsplash-e1655458027692.jpg",
+            "categoryId": 3,
+            "stock": 85
+          },
+          {
+            "id": 17,
+            "name": "Nho đỏ",
+            "description": "Nho đỏ Mỹ, giòn ngọt.",
+            "price": 95000,
+            "image": "https://media.loveitopcdn.com/1254/nho-do-khong-hat-my-nhobonmuacom.png",
+            "categoryId": 3,
+            "stock": 40
+          },
+          {
+            "id": 18,
+            "name": "Dâu tây",
+            "description": "Dâu tây Đà Lạt, mọng nước, thơm ngon.",
+            "price": 120000,
+            "image": "https://cdn.tgdd.vn/Files/2020/03/04/1239956/diem-danh-mot-so-giong-dau-tay-ngon-nhat-hien-nay-202003040959065089.jpg",
+            "categoryId": 3,
+            "stock": 30
+          },
+          {
+            "id": 19,
+            "name": "Mướp",
+            "description": "Mướp tươi, ngon, giàu chất xơ.",
+            "price": 20000,
+            "image": "https://meatboxvietnam.vn/wp-content/uploads/2019/10/muop-huong.jpg",
+            "categoryId": 2,
+            "stock": 75
+          },
+          {
+            "id": 20,
+            "name": "Cà chua",
+            "description": "Cà chua bi, tươi mọng, thích hợp làm salad.",
+            "price": 25000,
+            "image": "https://bloganchoi.com/wp-content/uploads/2018/03/tac-dung-cua-ca-chua.jpg",
+            "categoryId": 2,
+            "stock": 100
+          },
+          {
+            "id": 21,
+            "name": "Măng tây",
+            "description": "Măng tây xanh, giòn, giàu chất xơ.",
+            "price": 85000,
+            "image": "https://dammenaunuong.com/wp-content/uploads/2021/09/mang-tay-nau-gi-ngon.jpg",
+            "categoryId": 1,
+            "stock": 40
+          },
+          {
+            "id": 22,
+            "name": "Rau dền",
+            "description": "Rau dền tươi mát, tốt cho máu.",
+            "price": 16000,
+            "image": "https://cdn.vuanem.com/blog/wp-content/uploads/2022/11/cay-rau-den-do.jpg",
+            "categoryId": 1,
+            "stock": 60
+          },
+          {
+            "id": 23,
+            "name": "Rau mồng tơi",
+            "description": "Mồng tơi xanh mướt, mát ruột.",
+            "price": 17000,
+            "image": "https://farm24h.vn/wp-content/uploads/2020/04/RAUMONGTOI-3.jpg",
+            "categoryId": 1,
+            "stock": 50
+          },
+          {
+            "id": 24,
+            "name": "Cải thìa",
+            "description": "Cải thìa baby, mềm và ngọt.",
+            "price": 20000,
+            "image": "https://nongsansachlamdong.com/upload/products/cai-thia-img-1488701054.jpg",
+            "categoryId": 1,
+            "stock": 65
+          },
+          {
+            "id": 25,
+            "name": "Nấm rơm",
+            "description": "Nấm rơm tự nhiên, sạch, an toàn.",
+            "price": 40000,
+            "image": "https://tusayyen.com/wp-content/uploads/2022/03/phuong-phap-say-nam-rom.jpg",
+            "categoryId": 2,
+            "stock": 45
+          },
+          {
+            "id": 26,
+            "name": "Nấm mỡ",
+            "description": "Nấm mỡ trắng, thơm ngon.",
+            "price": 45000,
+            "image": "https://yt.cdnxbvn.com/medias/topnews.com.vn/27025/nam-mo-nau.jpg",
+            "categoryId": 2,
+            "stock": 50
+          },
+          {
+            "id": 27,
+            "name": "Gừng tươi",
+            "description": "Gừng tươi, cay nồng, thơm đặc trưng.",
+            "price": 30000,
+            "image": "https://www.thuocdantoc.org/wp-content/uploads/2021/08/gung-1.jpg",
+            "categoryId": 2,
+            "stock": 70
+          },
+          {
+            "id": 28,
+            "name": "Hành tím",
+            "description": "Hành tím sạch, vị thơm, cay dịu.",
+            "price": 25000,
+            "image": "https://vinmec-prod.s3.amazonaws.com/images/20210606_012943_628959_cu-hanh-tim-co-tac-.max-1800x1800.jpg",
+            "categoryId": 2,
+            "stock": 90
+          },
+          {
+            "id": 29,
+            "name": "Ớt đỏ",
+            "description": "Ớt đỏ cay, gia vị tự nhiên.",
+            "price": 35000,
+            "image": "https://tokke.kesspay.io/storage/product/57232/XkQ7rOvP48no3Z4YVQMoAzrVyCZA9FyHp9bYzjGL.png",
+            "categoryId": 2,
+            "stock": 80
+          },
+          {
+            "id": 30,
+            "name": "Hành lá",
+            "description": "Hành lá xanh tươi, gia vị cần thiết.",
+            "price": 15000,
+            "image": "https://cayantraidetrong.com/wp-content/uploads/2021/08/cay-hanh-la-2.jpg",
+            "categoryId": 2,
+            "stock": 100
+          },
+          {
+            "id": 31,
+            "name": "Rau quế",
+            "description": "Rau quế thơm, dùng ăn phở, bún.",
+            "price": 12000,
+            "image": "https://thucphamsachgiatot.vn/image/cache/catalog/hung-que-700x700.jpg",
+            "categoryId": 1,
+            "stock": 95
+          },
+          {
+            "id": 32,
+            "name": "Chanh tươi",
+            "description": "Chanh tươi mọng nước, không hạt.",
+            "price": 30000,
+            "image": "https://suckhoedoisong.qltns.mediacdn.vn/Images/duylinh/2016/07/02/Nhng-li-ich-ca-v-chanh-1.jpg",
+            "categoryId": 3,
+            "stock": 75
+          },
+          {
+            "id": 33,
+            "name": "Dừa xiêm",
+            "description": "Dừa xiêm Bến Tre, ngọt mát.",
+            "price": 40000,
+            "image": "https://foody24h.vn/uploads/collections/dua-xiem-ben-tre-4022-2021-11-075.jpg",
+            "categoryId": 3,
+            "stock": 60
+          },
+          {
+            "id": 34,
+            "name": "Sầu riêng Ri6",
+            "description": "Sầu riêng Ri6, cơm vàng hạt lép.",
+            "price": 150000,
+            "image": "https://cdn.tgdd.vn/Files/2020/05/11/1254977/cach-phan-biet-sau-rieng-ri6-va-sau-rieng-thai-chi-voi-dac-diem-duoi-day-202005112322327365.jpg",
+            "categoryId": 3,
+            "stock": 30
+          },
+          {
+            "id": 35,
+            "name": "Mít Thái",
+            "description": "Mít Thái dai, ngọt lịm.",
+            "price": 65000,
+            "image": "https://avi.org.vn/images/mit-thai.jpg",
+            "categoryId": 3,
+            "stock": 55
+          },
+          {
+            "id": 36,
+            "name": "Xoài cát",
+            "description": "Xoài cát Hòa Lộc, ngọt thơm.",
+            "price": 70000,
+            "image": "https://thuonghieusanpham.vn/stores/news_dataimages/thuonghieusanphamvn/072020/03/10/xoai-cat-hoa-loc-dac-san-noi-tieng-xu-tien-giang-59-.1304.jpg",
+            "categoryId": 3,
+            "stock": 65
+          },
+          {
+            "id": 37,
+            "name": "Thanh long ruột đỏ",
+            "description": "Thanh long ruột đỏ, mọng nước.",
+            "price": 55000,
+            "image": "https://traicaycaonghe.vn/wp-content/uploads/2021/03/thanhlongruotdo13.jpg",
+            "categoryId": 3,
+            "stock": 70
+          },
+          {
+            "id": 38,
+            "name": "Cherry Mỹ",
+            "description": "Cherry Mỹ nhập khẩu, ngọt mọng nước, giàu vitamin C.",
+            "price": 320000,
+            "image": "https://vuonmattroi.com/wp-content/uploads/2021/04/cherry-my.jpg",
+            "categoryId": 3,
+            "stock": 35
+        },
+        {
+            "id": 39,
+            "name": "Việt quất (Blueberry)",
+            "description": "Việt quất tươi nhập khẩu, ngọt thanh, giàu chất chống oxy hóa.",
+            "price": 280000,
+            "image": "https://vinmec-prod.s3.amazonaws.com/images/20200728_153129_604670_VQ.max-1800x1800.jpg",
+            "categoryId": 3,
+            "stock": 40
+          },
+          {
+            "id": 40,
+            "name": "Su hào",
+            "description": "Su hào tươi, giòn ngọt, thích hợp nấu canh hoặc luộc.",
+            "price": 25000,
+            "image": "https://s.meta.com.vn/img/thumb.ashx/Data/image/2021/02/25/su-hao-1.jpg",
+            "categoryId": 2,
+            "stock": 80
+          },
+          {
+            "id": 41,
+            "name": "Mận hậu",
+            "description": "Mận hậu Sơn La, trái to, ngọt dịu, vỏ đỏ tím.",
+            "price": 60000,
+            "image": "https://cdn.chonongsanonline.com/uploads/all/uBvf3iwMGzp0Iba5z7RGUdhu59tH8PpoIiW4ryiE.png",
+            "categoryId": 3,
+            "stock": 50
+          },
+          {
+            "id": 42,
+            "name": "Vú sữa Lò Rèn",
+            "description": "Vú sữa Lò Rèn Tiền Giang, trái căng mọng, ngọt lịm.",
+            "price": 75000,
+            "image": "https://media.mia.vn/uploads/blog-du-lich/ve-tien-giang-thuong-thuc-vu-sua-lo-ren-vinh-kim-nuc-tieng-4-1650969321.jpg",
+            "categoryId": 3,
+            "stock": 40
+          },
+          {
+            "id": 43,
+            "name": "Dưa hấu đỏ",
+            "description": "Dưa hấu ngọt mát, đẹp mắt, giàu dinh dưỡng.",
+            "price": 35000,
+            "image": "https://img6.thuthuatphanmem.vn/uploads/2022/01/27/hinh-anh-dua-hau-2k_012708881.jpeg",
+            "categoryId": 3,
+            "stock": 60
+          },
+          {
+            "id": 44,
+            "name": "Na (mãng cầu ta)",
+            "description": "Na dai, ngọt thơm, nhiều dinh dưỡng, đặc sản miền Bắc.",
+            "price": 55000,
+            "image": "https://tapdoanvinasa.com/wp-content/uploads/2019/10/mang-cau-ta.tapdoanvinasa-05.jpg",
+            "categoryId": 3,
+            "stock": 70
+          },
+          {
+            "id": 45,
+            "name": "Bơ sáp Đắk Lắk",
+            "description": "Bơ sáp Đắk Lắk, cơm vàng dẻo, béo ngậy, thơm ngon tự nhiên.",
+            "price": 85000,
+            "image": "https://2.bp.blogspot.com/-2u4i8FLvvvE/U79t9znbVbI/AAAAAAAACkI/hd5U4rfB818/s1600/bo-sap-daklak-ngon.jpg",
+            "categoryId": 3,
+            "stock": 50
+          }
+    ],
+    "orders": [
+      {
+        "id": 1,
+        "userId": 3,
+        "date": "2025-03-14",
+        "totalAmount": 85000,
+        "status": "pending"
+      }
+    ],
+    "orderDetails": [
+      {
+        "id": 1,
+        "orderId": 1,
+        "productId": 1,
+        "quantity": 2,
+        "price": 15000
+      },
+      {
+        "id": 2,
+        "orderId": 1,
+        "productId": 2,
+        "quantity": 1,
+        "price": 20000
+      },
+      {
+        "id": 3,
+        "orderId": 1,
+        "productId": 3,
+        "quantity": 1,
+        "price": 50000
+      }
+    ],
+    "carts": [
+      {
+        "id": 1,
+        "userId": 3,
+        "productId": 2,
+        "quantity": 3
+      },
+      {
+        "id": 2,
+        "userId": 3,
+        "productId": 1,
+        "quantity": 1
+      }
+    ],
+    "reviews": [
+      {
+        "id": 1,
+        "productId": 3,
+        "userId": 3,
+        "rating": 5,
+        "comment": "Táo rất ngon và giòn!"
+      },
+      {
+        "id": 2,
+        "productId": 1,
+        "userId": 3,
+        "rating": 4,
+        "comment": "Rau tươi, giá hợp lý."
+      }
+    ],
+    "blogs": [
+    {
+      "id": 1,
+      "title": "Thế nào là thực phẩm sạch và an toàn? Tiêu chí đánh giá và lựa chọn thực phẩm sạch",
+      "author": "admin",
+      "date": "08/06/2023",
+      "image": "https://blog.vmcvietnam.org/wp-content/uploads/2023/06/the-nao-la-thuc-pham-sach-va-an-toan-1.jpg",
+      "excerpt": "Thực phẩm sạch và an toàn ảnh hưởng lớn đến sức khỏe. Vậy làm thế nào để lựa chọn thực phẩm sạch?",
+      "content": "Thực phẩm sạch và an toàn có ảnh hưởng rất lớn đến sức khỏe của tất cả mọi người. Tuy nhiên, trong cuộc sống công nghiệp và hiện đại như hiện nay, việc lựa chọn được thực phẩm sạch đối với các bà nội trợ thực sự là một bài toán khó. Vậy, thế nào là thực phẩm sạch và an toàn? làm thế nào để lựa chọn được thực phẩm sạch cho gia đình? Những tiêu chí để đánh giá và phân loại thực phẩm an toàn cho sức khỏe là gì? Mọi người hãy theo dõi nội dung chia sẻ dưới đây để có được thông tin chính xác nhất.",
+      "link": "/blog/1"
+    },
+    {
+      "id": 2,
+      "title": "Ăn ngon mặt đẹp: TOP 15 loại thực phẩm giúp dưỡng trắng da từ bên trong",
+      "author": "peachyy",
+      "date": "04/03/2025",
+      "image": "https://bloganchoi.com/wp-content/uploads/2025/03/an-gi-duong-trang-da-5-1068x569.jpg",
+      "excerpt": "Vì sao bạn dưỡng trắng da liên tục mà da vẫn đen? Có thể do bạn đang ăn những thực phẩm không phù hợp!",
+      "content": "Vì sao bạn dưỡng trắng da liên tục mà da vẫn đen? Là bởi vì bạn luôn ăn những thứ khiến da bị đen còn dễ bắt nắng. Hãy tích cực ăn những thực phẩm này để dưỡng trắng da từ bên trong nhé.\n\nCác thực phẩm bao gồm: chanh, cà chua, dưa chuột, quả anh đào, dâu tây, quả táo, củ cải trắng, nho, đậu Hà Lan, đậu phụ, bí đao, cà rốt, súp lơ xanh, kiwi, các loại hạt, nấm trắng và trà xanh.",
+      "link": "/blog/2"
+    },
+    {
+      "id": 3,
+      "title": "Tiêu chuẩn GlobalGAP – Định nghĩa thực phẩm sạch toàn cầu",
+      "author": "admin",
+      "date": "10/06/2023",
+      "image": "https://blog.vmcvietnam.org/wp-content/uploads/2023/06/the-nao-la-thuc-pham-sach-va-an-toan-3.jpg",
+      "excerpt": "GlobalGAP là tiêu chuẩn giúp kiểm soát thực phẩm an toàn từ sản xuất đến tiêu dùng.",
+      "content": "GlobalGap là một phương pháp thực hành sản xuất nông nghiệp tiên tiến nhất toàn cầu hiện nay. Tiêu chuẩn đánh giá GlobalGap yêu cầu nhà sản xuất phải thiết lập được hệ thống kiểm tra giám sát an toàn thực phẩm trong suốt quá trình. Đảm bảo xuyên suốt từ khâu chuẩn bị sản xuất đến khi thu hoạch, chế biến và bảo quản.",
+      "link": "/blog/3"
+    },
+    {
+      "id": 4,
+      "title": "Thực phẩm hữu cơ và lợi ích của tiêu chuẩn hữu cơ",
+      "author": "admin",
+      "date": "11/06/2023",
+      "image": "https://blog.vmcvietnam.org/wp-content/uploads/2023/06/the-nao-la-thuc-pham-sach-va-an-toan-4.jpg",
+      "excerpt": "Thực phẩm hữu cơ không chứa hóa chất, đảm bảo sức khỏe và an toàn cho người tiêu dùng.",
+      "content": "Thực phẩm hữu cơ là những thực phẩm hoàn toàn không sử dụng các hóa chất tổng hợp như phân bón hóa học, thuốc trừ sâu, hormone tăng trưởng. Thay vào đó là tập trung vào sử dụng các phương pháp tự nhiên, bền vững và tôn trọng môi trường để nuôi trồng cây trồng và chăn nuôi động vật.",
+      "link": "/blog/4"
+    },
+    {
+      "id": 5,
+      "title": "Các loại thực phẩm sạch phổ biến hiện nay",
+      "author": "admin",
+      "date": "12/06/2023",
+      "image": "https://blog.vmcvietnam.org/wp-content/uploads/2023/06/the-nao-la-thuc-pham-sach-va-an-toan.jpg",
+      "excerpt": "Các loại thực phẩm sạch bao gồm rau hữu cơ, thịt hữu cơ và thực phẩm biển hữu cơ.",
+      "content": "Thực phẩm sạch bao gồm các loại thực phẩm được sản xuất và xử lý theo các tiêu chuẩn và quy trình đảm bảo về chất lượng và an toàn đối với sức khỏe người sử dụng. Một số loại thực phẩm sạch phổ biến gồm:\n\n- Rau và quả hữu cơ: Trồng và chăm sóc bằng phương pháp hữu cơ, không sử dụng phân bón hóa học.\n- Thịt và sản phẩm động vật hữu cơ: Thịt, trứng, sữa từ động vật được nuôi bằng thức ăn hữu cơ.\n- Các sản phẩm nông sản hữu cơ: Bao gồm các loại ngũ cốc như lúa mì, gạo.\n- Thực phẩm biển hữu cơ: Hải sản, tảo biển nuôi trồng theo phương pháp hữu cơ.",
+      "link": "/blog/5"
+    },
+    {
+      "id": 6,
+      "title": "Tiêu chuẩn VietGAP trong đánh giá thực phẩm sạch",
+      "author": "admin",
+      "date": "09/06/2023",
+      "image": "https://blog.vmcvietnam.org/wp-content/uploads/2023/06/the-nao-la-thuc-pham-sach-va-an-toan-2.jpg",
+      "excerpt": "Tiêu chuẩn VietGAP giúp đánh giá thực phẩm an toàn với 4 tiêu chí quan trọng.",
+      "content": "VietGAP là một phương pháp thực hành sản xuất nông nghiệp tiên tiến của Việt Nam, được dùng để đánh giá thực phẩm an toàn và sạch, đảm bảo sức khỏe con người. Các tiêu chuẩn đánh giá của VietGAP dựa trên 4 tiêu chí:\n\n1. Kỹ thuật sản xuất phải đạt tiêu chuẩn nghiêm ngặt.\n2. Đảm bảo khi thu hoạch không có hóa chất nhiễm khuẩn hoặc gây ô nhiễm.\n3. Dễ dàng truy tìm nguồn gốc thực phẩm.\n4. Môi trường sản xuất không lạm dụng sức lao động.",
+      "link": "/blog/6"
+    }
+  ]
+  }
