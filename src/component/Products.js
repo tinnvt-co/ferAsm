@@ -12,6 +12,12 @@ export default function Products() {
   const [err, setErr] = useState("");
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
+
+  const [visibleCount, setVisibleCount] = useState(12);
+
+  //filter states
+  const [searchName, setSearchName] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -73,11 +79,14 @@ export default function Products() {
                     <Form.Control
                       type="text"
                       placeholder="Nhập tên sản phẩm..."
+                      value={searchName}
+                      onChange={(e)=>setSearchName(e.target.value)}
                     />
                   </Form.Group>
                   <Form.Group className="mb-3">
                     <Form.Label className="fw-bold">Danh mục</Form.Label>
-                    <Form.Select>
+                    <Form.Select value={selectedCategory}
+                    onChange={(e)=> setSelectedCategory(e.target.value)}>
                       <option value="">Tất Cả Danh Mục</option>
                       {categories.map((categories) => (
                         <option key={categories.id} value={categories.id}>
@@ -134,7 +143,9 @@ export default function Products() {
           </Col>
               <Col lg={9} md={8}>
             <div className="d-flex justify-content-between mb-3 align-items-center">
-                
+                <Row>
+
+                </Row>
             </div>
               </Col>
         </Row>
