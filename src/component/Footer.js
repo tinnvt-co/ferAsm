@@ -11,7 +11,7 @@ export default function Footer() {
           <Col md={4} className="mb-3">
             <h5>Liên hệ</h5>
             <p>Email: <a href="mailto:nguyenvutrantin@fpt.edu.vn" className="text-light text-decoration-none">nguyenvutrantin@fpt.edu.vn</a></p>
-            <p>Điện thoại: <a href="tel:0918260603" className="text-light text-decoration-none">0918 260 603</a></p>
+            <p>Điện thoại: <a href="tel:0868729129" className="text-light text-decoration-none">0868 729 129</a></p>
             <p>Địa chỉ: Trường Đại học FPT cơ sở Hòa Lạc, Thạch Thất, Hà Nội</p>
           </Col>
           <Col md={4} className="mb-3">
