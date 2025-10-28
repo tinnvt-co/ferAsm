@@ -10,12 +10,11 @@ export default function Register() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const navigate = useNavigate();
-    const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    setSuccess(""); 
-    }
-    return (
+    
+  const handleSubmit = async (e)=> {
+    
+  }
+  return (
      <Container>
       <Row className="justify-content-md-center mt-5">
         <Col xs={12} md={6}>
