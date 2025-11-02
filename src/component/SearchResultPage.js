@@ -16,7 +16,6 @@ export default function SearchResultsPage() {
         setProducts(data.products);
       });
   }, []);
-
   useEffect(() => {
     if (query) {
       const results = products.filter((product) =>

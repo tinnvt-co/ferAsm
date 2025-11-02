@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-export default function Register() {
+
+function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -10,12 +11,67 @@ export default function Register() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const navigate = useNavigate();
-    
-  const handleSubmit = async (e)=> {
-    
-  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setError("");
+    setSuccess("");
+
+    // Form validation
+    if (!name || !email || !password || !confirmPassword) {
+      setError("Vui lòng điền đầy đủ thông tin.");
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      setError("Mật khẩu xác nhận không khớp.");
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Email không hợp lệ.");
+      return;
+    }
+
+    try {
+      // Check if email already exists
+      const usersResponse = await axios.get("http://localhost:9999/users");
+      const userExists = usersResponse.data.some(
+        (user) => user.email === email
+      );
+
+      if (userExists) {
+        setError("Email đã được đăng ký. Vui lòng sử dụng email khác.");
+        return;
+      }
+
+      // Get the latest user ID to create a new one
+      const maxId = Math.max(...usersResponse.data.map((user) => user.id), 0);
+
+      // Create new user
+      const newUser = {
+        id: maxId + 1,
+        name,
+        email,
+        password, // Note: In a production app, password should be hashed
+        role: "customer", // Default role for new users
+      };
+
+      await axios.post("http://localhost:9999/users", newUser);
+
+      setSuccess("Đăng ký thành công!");
+      // Chuyển hướng ngay lập tức đến trang đăng nhập
+      navigate("/login");
+    } catch (err) {
+      console.error("Lỗi khi đăng ký:", err);
+      setError("Có lỗi xảy ra khi đăng ký. Vui lòng thử lại sau.");
+    }
+  };
+
   return (
-     <Container>
+    <Container>
       <Row className="justify-content-md-center mt-5">
         <Col xs={12} md={6}>
           <h2 className="text-center mb-4">Đăng ký tài khoản</h2>
@@ -76,5 +132,7 @@ export default function Register() {
         </Col>
       </Row>
     </Container>
-  )
+  );
 }
+
+export default Register;
